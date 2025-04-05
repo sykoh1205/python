@@ -7,7 +7,7 @@ for i in range(2,10):
 print(dan)
 
 #구구단_바깥for문
-for k in range(1,10):
+for i in range(1,10):
     dan = ""
     #구구단_안쪽for문
     for k in range(2,10):
