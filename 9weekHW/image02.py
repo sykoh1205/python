@@ -13,7 +13,7 @@ window.geometry("810x810")
 shuffle(photoList)
 
 for i in range(0,9):
-    photoList[i] = PhotoImage(file= "C:\\Users\\delta\\OneDrive\\바탕 화면\\git\\python\\9weekHW\\"+fnameList[i])
+    photoList[i] = PhotoImage(file= "C:\\Users\\delta\\OneDrive\\바탕 화면\\git\\python\\9weekHW\\image\\"+fnameList[i])
     btnList[i] = Button(window, image=photoList[i], width=270, height=270)
 
 for i in range(0,3):

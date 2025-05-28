@@ -10,7 +10,7 @@ def clickNext():
     num +=1
     if num > 8:
         num = 0
-    photo = PhotoImage(file="C:\\Users\\delta\\OneDrive\\바탕 화면\\git\\python\\9weekHW\\"+fnameList[num])
+    photo = PhotoImage(file="C:\\Users\\delta\\OneDrive\\바탕 화면\\git\\python\\9weekHW\\image\\"+fnameList[num])
     pLabel.configure(image=photo)
     pLabel.image = photo
     label1.configure(text=fnameList[num])
@@ -21,7 +21,7 @@ def clickPrev():
     num -=1
     if num < 0:
         num = 8
-    photo = PhotoImage(file="C:\\Users\\delta\\OneDrive\\바탕 화면\\git\\python\\9weekHW\\"+fnameList[num])
+    photo = PhotoImage(file="C:\\Users\\delta\\OneDrive\\바탕 화면\\git\\python\\9weekHW\\image\\"+fnameList[num])
     pLabel.configure(image=photo)
     pLabel.image = photo
     label1.configure(text=fnameList[num])
@@ -34,7 +34,7 @@ window.title("사진 앨범 보기")
 btnPrev = Button(window, text = "<<< 이전", command=clickPrev)
 btnNext = Button(window, text = "다음 >>>", command=clickNext)
 
-photo = PhotoImage(file="C:\\Users\\delta\\OneDrive\\바탕 화면\\git\\python\\9weekHW\\"+fnameList[0])
+photo = PhotoImage(file="C:\\Users\\delta\\OneDrive\\바탕 화면\\git\\python\\9weekHW\\image\\"+fnameList[0])
 pLabel = Label(window, image=photo)
 label1 = Label(window, text=fnameList[num])
 
